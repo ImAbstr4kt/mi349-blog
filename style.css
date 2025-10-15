@@ -1,0 +1,185 @@
+/* Highlight class */
+.highlight {
+  background-color: #ffd8d8;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+/* ID Selector */
+#newsletter {
+  background-color: #ffd8d8;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+/* Fix for form entry fields and submit buttons extending too far*/
+* {
+  box-sizing: border-box;
+}
+
+/* Multi column flexbox form */
+#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+/* Format columns */
+.form-column {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Floated right image class */
+.float-r {
+  float: right;
+  margin: 0 0 1em 1em;
+  max-width: 30%;
+}
+
+/* 1 Body */
+body {
+  font: Arial, sans-serif;
+  color: #28000d;
+  background-color: #ffe0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2 Headings */
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+}
+
+/* 3 Paragraphs */
+p {
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+/* 4 Links */
+a {
+  color: #ca2162;
+  text-decoration: none;
+}
+
+/* 4 Link underline on hover */
+a:hover {
+  text-decoration: underline;
+}
+
+/* 6. Sticky Header */
+header {
+  background-color: #f9b5b5;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 7 H1 within header for custom color */
+header h1 {
+  color: #3c0118;
+}
+
+/* 8. Form layout with flexbox columns */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+/* 9 Form input boxes */
+input[type="text"], input[type="email"], input[type="message"], textarea {
+  width: 100%;
+  border: 1px solid #cdbcbc;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+/* 10 Form select box */
+select {
+    width: 100%;
+    border: 1px solid #cdbcbc;
+    color: #8f556a;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+/* 11 Submit button */
+button {
+  background-color: #ca2162;
+  color: white;
+  border: none;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  cursor:pointer;
+  width: 90%;
+  margin: 1em auto;
+}
+
+/* 12 Submit button hover effect */
+button:hover {
+  background-color: #7e0433;
+}
+
+/* 13 Section margins */
+section {
+    margin: 2em;
+}
+
+/* 14 Table */
+table {
+  margin: 0 auto;
+}
+
+/* 15 Table content */
+table td {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* 16 Table headers */
+table th {
+  text-align: center;
+  font-size: 24px;
+}
+
+/* 17 Border between sections */
+section {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 2em;   /* spacing inside the section */
+  margin-bottom: 2em;    /* spacing between sections */
+}
+
+/* 18 Images */
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0; /* remove auto centering */
+}
+
+/* 19 Image captions */
+figure figcaption {
+  text-align: center;
+  font-size: 24;
+  color: #555;
+  margin: 0.5em;
+}
+
+/* 20 Form labels */
+label {
+  font-weight: bold;
+  margin: 0.5em;
+  display: block;
+}
+
+/* 21 Standard image */
+img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}

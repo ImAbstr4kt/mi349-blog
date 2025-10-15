@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,28 +18,31 @@
         </nav>
     </header>
     <section>
-        <h2>Want to get in contact?</h2>
+        <h2 class="highlight">Want to get in contact?</h2>
         <p>
             Fill out the form below, I'll respond as soon as I can.
         </p>
-        <form name="contact" netlify>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name"><br><br>
+        <form id="contact-form" name="contact" netlify>
+            <div class="form-column">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name">
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-
-            <label for="reason">Reason for contact:</label>
-            <select id="reason" name="reason">
-                <option value="hi">Saying hi</option>
-                <option value="contractor">Looking for a contractor</option>
-                <option value="interview">Interested in an interview</option>
-            </select><br><br>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea><br><br>
-
-            <button type="submit">Submit</button>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-column">
+                <label for="reason">Reason for contact:</label>
+                <select id="reason" name="reason">
+                    <option value="hi">Saying hi</option>
+                    <option value="contractor">Looking for a contractor</option>
+                    <option value="interview">Interested in an interview</option>
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-column">
+                <button type="submit">Submit</button>
+            </div>
         </form>
     </section>
 </body>
