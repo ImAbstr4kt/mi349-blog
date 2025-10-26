@@ -161,10 +161,10 @@ section {
 
 /* 18 Images */
 figure img {
-  width: 100%;
-  height: auto;
+  text-align: center;
   display: block;
-  margin: 0; /* remove auto centering */
+  max-width: 100%;
+  margin: 0 auto; /* remove auto centering */
 }
 
 /* 19 Image captions */
@@ -172,7 +172,7 @@ figure figcaption {
   text-align: center;
   font-size: 1rem;
   color: #555;
-  margin: 0.5em;
+  margin-top: 0.5em;
 }
 
 /* 20 Form labels */
@@ -195,10 +195,60 @@ img {
   html {
     font-size: 14px;
   }
+
+  button {
+    width: 100%;        /* Easier to tap on small screens */
+    padding: 1rem;
+  }
+
+  header h1, h2 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
   html {
     font-size: 12px;
+  }
+
+    button {
+    width: 100%;        /* Easier to tap on small screens */
+    padding: 1rem;
+  }
+
+  header h1, h2 {
+    text-align: center;
+  }
+
+  .float-r {
+    float: none;
+    display: block;
+    max-width: 100%;
+  }
+
+  figure figcaption {
+    font-size: 1.5em;
+  }
+
+  /*contrast improvement for especially small screens */
+  body {
+    background-color: #ffeaea;
+  }
+
+  header {
+    background-color: #ffd2d2;
+  }
+
+  .highlight {
+    background-color: #ffe1e1;
+  }
+
+  #newsletter {
+    background-color: #ffe1e1;
+  }
+
+  a {
+    color: #8b1743;
+    text-decoration: underline;
   }
 }
