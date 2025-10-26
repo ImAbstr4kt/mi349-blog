@@ -183,3 +183,28 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+/*-----RESPONSIVE DESIGN RULES-------------------------------*/
+
+@media (max-width: 768px) {
+  /*font sizes*/
+    p {
+    font-size: 18px;
+  }
+
+  table td {
+    font-size: 18px;
+  }
+
+  table th {
+    font-size: 22px;
+  }
+
+  figure figcaption {
+    font-size: 22;
+  }
+}
+
+@media (max-width: 480px) {
+  rules here
+}
